@@ -1,0 +1,673 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body html{
+    background-color: black;
+    
+}
+
+#img{
+    width: 100%;
+}
+
+h0{
+    display:block; 
+    width: 100%;
+    height: 40px;
+    font-size: 33px;
+    font: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 2px 3px floralwhite;
+    font-family:fantasy Medium;
+    color: cadetblue;
+    position: fixed;
+    top: 0;
+    background-color: antiquewhite;
+}
+
+body.container {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.top-nav {
+    display: flex;
+    width: 100%;
+    top: 35px;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: fixed;
+    background-color: antiquewhite;
+}
+
+.nav-list {
+    flex: 1;
+}
+
+.nav-list ul {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1px;
+    padding: 0;
+}
+
+
+.nav-list ul li {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: "Times";
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background: linear-gradient(to top, #ffffff, #ffcccc);
+}
+
+
+.nav-list ul li a {
+    color: #06cccc;
+    padding: 8px 0;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.top-nav ul,
+.top-nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul {
+    text-align: center;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-right: .75em;
+}
+
+.top-nav ul li.last {
+    margin-right: 0;
+}
+
+.relative{
+    position: relative;
+    left: 10px;
+    width: 100%;
+    height: 50%;
+    top: 20px;
+    border: 0px solid #ffffff;
+    z-index: -1;
+}
+
+.intro{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 45%;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.65rem;
+}
+
+.profile-pic{
+    width: 550px;
+    height: auto;
+    z-index: -1;
+    margin-left: 50%;
+    margin-right: 3%;
+}
+
+
+   
+
+.profile-img{
+   
+    width: 100%;
+    height: auto;
+
+}
+
+.profile-detail{
+
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: Courier;
+    line-height: 20px;
+    color: white;
+    background-color: cadetblue;
+}
+
+
+.home-row {
+    display: flex;
+    width: 50%
+}
+
+
+.home-row .column {
+   width: 35%;
+    padding: 8px;
+    position: relative;
+  
+}
+
+.home-row .column img{
+    width: 180px;
+    height:130px;
+}
+
+.home-row .column .btn{
+    position: absolute;
+    top: -800%;
+    left: 350%;
+    transform:translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: Courier;
+}
+
+.home-row .btn:hover {
+
+    background: linear-gradient(to top, #ffffff, #ffcc99);
+}
+
+/*FOOTER*/
+
+.copyright {
+  position: fixed;
+    text-align: left;
+    bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+@media (max-width:100% ) {
+  nav, relative {
+    width: 100%;
+    height: auto;
+    }
+}
+
+
+
+
+
+/* ABOUT */
+
+
+.h1{
+    font-family: inherit;
+    font-size: 24pt;
+    color: red;
+    margin: center;
+    margin-top: 80%;
+    margin-bottom: 90%;
+    background-color:none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.about-detail{
+ width: 55%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: Courier;
+    line-height: 20px;
+    color: black;
+    background-color: none;   
+}
+
+
+div.pic{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    width: 20%;
+    z-index: -1;
+       
+}
+
+.about-img{
+    width: 100%;
+}
+
+.about-row {
+    display: flex;
+    width: 50%
+}
+
+
+.about-row .column {
+    width: 50%;
+    padding: 5px;
+    position: relative;
+  
+}
+
+.about-row .column img{
+    width: 180px;
+    height:150px;
+}
+
+.about-row .column .btn{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    align-items: center;
+    background-color: white;
+    font-family: Courier;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: none;
+}
+
+.about-row .column .btn:hover {
+   background: linear-gradient(to top, #ffffff, #ffcccc);
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* MY PORTFOLIO */
+.container h1{
+    position: relative;
+    margin-left: 30px;
+    top: 15px;
+    width: 200px;
+    padding: 3px 5px;
+    text-align: center;
+    color: black;
+    z-index: -1;
+    
+}
+.myport {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    height: 40%;
+    font-family: "Sofia";
+    text-align: center;
+    line-height: 75px;
+    font-size: 28px;
+    color: aliceblue;
+    padding: 60px 20px;
+    background-color: darkseagreen;
+    z-index: -1;
+    
+}
+
+.portfolio-row {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    width: 60%;
+}
+
+
+.portfolio-row .column {
+    float: right;
+    width: 33.33%;
+    padding: 20px;
+  
+}
+
+.portfolio-row .column img{
+    width: 180px;
+    height:150px;
+}
+
+.portfolio-row .column .btn{
+ position: relative;
+ top:-150%;
+ transform: translate(190%);
+ -ms-transform: translate(50% 50%);
+ padding: 12px 24px;
+ background-color: white;
+ border: none;
+ cursor: pointer;
+    
+ 
+    
+}
+
+.portfolio-row .column .btn:hover {
+   background: linear-gradient(to top, #ffffff, #8fbc8f);
+}
+
+.portfolio-detail{
+    width: 60%;
+    text-align: left;
+    margin-top: -300px;
+    margin-left: 450px;
+    font-size: 18px;
+    font-family: Courier;
+    line-height: 20px;
+    
+}
+
+/* MY PROJECT */
+
+.picture-project{
+
+    margin-right: 5%;
+    margin-left: 5%;
+    z-index: -1;
+    
+}
+
+.project-img{
+    width: 100%; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    
+}
+
+.project-row {
+    position: relative;
+    display: flex;
+    width: 60%;
+}
+
+
+.project-row .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  
+}
+
+.project-row .column img{
+    width: 180px;
+    height:150px;
+}
+
+.project-row .column .btn{
+position: absolute;
+top: 30%;
+transform: translate(-50% -50%);
+-ms-transform: translate(-50% -50%);
+background-color: white;
+padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+    
+}
+
+.project-row .column .btn:hover {
+   background: linear-gradient(to top, #ffffff, #ffcccc);
+}
+
+.project-detail{
+    width: 40%;
+    text-align: left;
+    margin-left: 60%;
+    margin-right: 5%;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Courier;
+    line-height: 20px;
+    margin-top: 40px;
+    
+}
+
+
+/* LINKS */
+
+
+
+.seminar{
+    position: relative;
+    left: 10px;
+    width: 100%;
+    height: 50%;
+    top: 20px;
+    border: 0px solid #ffffff;
+    z-index: -1;
+}
+
+.link-detail{
+ width: 55%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Courier;
+    line-height: 20px;
+    color: black;
+    background-color: none;   
+}
+
+
+.pic{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    width: 100%;
+    z-index: -1;
+       
+}
+
+
+h6{
+    font-size: 20px;
+    font-family: monospace;
+    color: #9966ff;
+    
+}
+
+
+
+
+/*EDUCATION*/
+
+.edu-page{
+    position: relative;
+    left: 10px;
+    width: 100%;
+    height: 50%;
+    top: 20px;
+    border: 0px solid #ffffff;
+    z-index: -1;
+}
+
+.education-detail{
+ width: 50%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: Courier;
+    line-height: 20px;
+    color: black;
+    background-color: none;   
+}
+
+
+
+/*BLOG*/
+
+.article1-detail{
+ width: 60%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Courier;
+    line-height: 20px;
+    color: black;
+    background-color: none;   
+}
+
+.article2-detail{
+ width: 60%;
+    margin-left: 25%;
+    margin-top: -10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Courier;
+    line-height: 20px;
+    color: black;
+    background-color: none;   
+}
+
+.blog-pic{
+    width: 45%;
+}
+
+.blog-img2{
+    width=100%;
+   margin-left: 10%;
+}
+
+/*START CONTACT*/
+
+form{
+    width:50%;
+    margin: 0 right;
+    margin-left: 4.5rem;
+}
+
+
+form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 5px;
+    outline-color: #cc99ff;
+}
+
+input[type="submit"]{
+    width: initial;
+    background-color: #99ccff;
+    padding: 1rem 2rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+   background: linear-gradient(to top, #ffffff, #ffcccc); 
+}
+
+.social-media{
+   margin-top: -1rem;
+    margin-left: 40rem;
+    margin-bottom:10rem;
+}
+
+.social-media .fa{
+    padding: 22px 12px;
+    font-size: 3rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 650ms;
+    background-color: white;
+    color: black;
+}
+
+  
+
+.fa-linkedin-square:hover{
+    color: #0072b1;
+}
+
+.fa-facebook-square:hover{
+    color: #4267b2;
+}
+
+.fa-twitter-square:hover{
+    color: #38a1f3;
+}
+
+/*END CONTACT*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
